@@ -22,7 +22,7 @@ public class UsuarioBuilder {
     private String nome = "Caio";
 
     @Builder.Default
-    private String cpf = "000.000.000-00";
+    private String cpf = "352.698.080-21";
 
     @Builder.Default
     private String email = "teste@teste.com.br";

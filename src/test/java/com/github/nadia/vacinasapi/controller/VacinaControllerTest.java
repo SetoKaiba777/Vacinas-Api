@@ -138,7 +138,7 @@ public class VacinaControllerTest {
     }
 
     @Test
-    void whenPOSTInvalidVacinaIsCalled_ThenAVacinaIsReturned() throws Exception {
+    void whenPOSTInvalidVacinaIsCalled_ThenAnErrorIsReturned() throws Exception {
         //Configurações iniciais
         VacinaRequest vacinaRequest = VacinaRequestBuilder.builder().build().toVacinaResquet();
         vacinaRequest.setEmail(INVALID_USER_MAIL);

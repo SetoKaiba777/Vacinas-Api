@@ -70,7 +70,6 @@ public class UsuarioController {
     @Operation(summary = "Atualiza dados do Usuário")
     public UsuarioResponse atualizar(@PathVariable("id") Long id, @Valid @RequestBody UsuarioUpdateRequest request){
         var usuario = usuarioMapper.toUsuarioEntity(request);
-        System.out.println(usuario);
         return usuarioMapper.toUsuarioResponse(usuarioService.atualizar(id, usuario));
     }
 
